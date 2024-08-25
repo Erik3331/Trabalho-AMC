@@ -1,6 +1,6 @@
 body {
     color: rgb(255, 255, 255);
-    background: url(back.jpg) no-repeat center center; /* Centraliza a imagem de fundo */
+    background: url(back.jpg) no-repeat center; /* Centraliza a imagem de fundo */
     background-size: cover; /* Faz com que a imagem cubra todo o fundo */
     font-family: system-ui;
     text-align: center;
@@ -10,10 +10,11 @@ body {
 }
 
 header {
-    background-color: #0e1b54b7;
+    background-color: #0e1b545f;
+    box-shadow:  #0e1b5462 0px 10px 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     height: 100px;
     padding: 0;
     margin: 0;
@@ -23,11 +24,20 @@ header img {
     height: 100px;
 }
 
-header h1 {
-    margin: 0;
+header p{
+    color: #0e1b54b7;
+}
+
+.card{
+    margin-top: 5rem;
+    padding: 3px;
+    border-radius: 0 50px 50px 0 ;
+    width: 90%;
+    background-color: #0e1b54;
 }
 
 article {
+    align-items: center;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -37,7 +47,7 @@ article {
     padding: 2rem; /* Espaçamento interno */
     max-width: 800px; 
     margin: 5rem auto;
-    width: 75%; /* Largura do card */
+    width: 95%; /* Largura do card */
     box-sizing: border-box; /* Inclui padding e border na largura e altura total */
 }
 
@@ -46,21 +56,37 @@ article h1 {
     padding-bottom: 1rem; /* Espaçamento inferior no título */
 }
 
+article img{
+    width: 50%;
+    border-radius: 10px;
+    border: #0e1b54 5px solid;
+    margin-bottom: 15px;
+}
+
 footer{
     background-color: #0e1b54;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0;
+    background-color: #0e1b545f;
+    box-shadow:  #0e1b5468 0px -10px 10px;
     height: 100px;
     padding: 0;
     margin: 0;
+}
+
+footer i:hover{
+    color: #4a0093;    
+    transition: 50ms ease-in-out;
 }
 
 @media (max-width: 768px) {
     header img{
         height: 70px;
     }
-    
+
     article{
         width: 90%;
     }
